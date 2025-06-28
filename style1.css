@@ -1,0 +1,281 @@
+*
+{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+
+body
+{  
+background-image: url(2jpg6.jpg);
+background-size:cover;
+background-position:right;    
+height:1119px;
+overflow: hidden;   
+color: #fff;  
+position: relative;
+z-index: 2;
+perspective: 600px;    
+}
+
+
+
+
+body:after
+{
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+background:rgba(0,0,0,0.5);
+z-index: -1;    
+}
+
+
+
+
+.login
+{
+float: right;
+margin-top: 150px;
+margin-right:520px;   
+width: 520px;
+height: 400px;
+position: relative;
+z-index: 2;
+}
+
+
+.login:before
+{
+content: '';
+right: 3px;
+top: -100px;
+width: 335px;
+height:502px;    
+background: linear-gradient(to top ,#47151d 67%,#ff0000a1);
+position: absolute;
+border-radius: 50% 50% 0 0 ;  
+z-index: -2;  
+transform: rotate(47deg);  
+box-shadow:15px -24px 44px 18px #dc59c9 ; 
+animation: color 2s  infinite ease;
+animation-play-state:running;    
+}
+
+
+.login:after
+{
+content: ''; 
+left: 16px;
+top: -100px;
+width: 335px;
+height: 502px;
+background: linear-gradient(to top ,#47151d 66%,#ff000061);
+position: absolute;
+border-radius: 50% 50% 0 0;
+z-index:-2;
+transform: rotate(-52deg);
+}
+
+
+@keyframes color {
+    
+    from{
+        
+       box-shadow:15px -24px 44px 18px #dc59c9 ;   
+    }
+    
+    
+    to{
+        
+       box-shadow:15px -24px 44px 18px #f00 ;  
+        
+    }
+}
+
+
+/*
+.login:hover.login:before
+{
+box-shadow:15px -24px 44px 18px #f00 ; 
+transition: 2s ease;  
+}
+
+*/
+
+
+
+
+
+
+.login:nth-child(1)
+{
+text-align: center;
+color: #fff;
+position: relative; 
+}
+
+
+
+
+.login input
+{
+display: block;
+text-align: center;
+margin: 40px auto; 
+width: 70%; 
+padding: 5px;    
+background-color: #401210;
+color: #fff;    
+background: linear-gradient(to bottom ,#401210,#401210 40%);
+border-radius: 10px;
+box-shadow: -5px 4px 26px 3px #ff4de7f0;
+}
+
+
+.login input:hover
+{
+box-shadow: -5px 4px 26px 10px #F00;
+transition: 2s ease;     
+}
+
+
+
+
+
+.login button
+{
+display: block;
+text-align: center;
+margin: 40px auto; 
+width: 45%; 
+padding: 5px;    
+background-color: #401210;
+color: #fff;    
+background: linear-gradient(to bottom ,#ff4de7f0,#000 70%);
+border-radius:50%  ;
+box-shadow: 7px 4px 26px 20px #ff4de7f0;  
+font-family: ehab; 
+font-weight: normal;
+font-size: 25px;
+animation: co 2s  infinite ease; 
+transition:  2s ease; 
+animation-play-state: running;
+}
+
+@keyframes co {
+    
+    from{
+        
+       box-shadow: 7px 4px 26px 5px #ff4de7f0;    
+    }
+    
+    
+    to{
+        
+     
+        box-shadow: 7px 4px 26px 20px #f00;
+        
+    }
+}
+
+
+
+
+
+
+::placeholder
+{
+color:#fff;
+font-family:ehab;
+letter-spacing: 2px;
+font-size:25px;    
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+.login button i
+{
+font-size: 30px;  
+}
+
+.login button :hover
+{
+transform:rotatey(360deg);
+ transition: 2s ease;     
+}
+
+
+
+.login button:hover
+{
+background: linear-gradient(to bottom ,#f00,#000 70%);    
+ box-shadow: 7px 4px 26px 20px #f00;
+transition: 2s ease;     
+}
+
+
+
+
+
+
+h1
+{
+font-family: bob;
+font-size: 70px;    
+}
+
+
+h1 i
+{
+color:#700c11;
+background-color: #fff;
+font-size: 50px; 
+border-radius: 50% ; 
+box-shadow: 5px 2px 39px 17px #ff4de7f0;   
+}
+
+
+h1 i:hover
+{
+box-shadow: 5px 2px 39px 17px #f00; 
+transition:all 2s ease-in-out;    
+}
+
+
+
+h1:hover
+{
+transform:scale(1.4);
+transition:all 2s ease-in-out; 
+
+}
+
+
+
+
+
+
+
+@font-face 
+{
+font-family:ehab;
+src:url(Aspire-DemiBold.ttf); 
+}
+
+@font-face 
+{
+font-family:bob;
+src:url(Lakesight_PersonalUseOnly.ttf); 
+}

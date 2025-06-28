@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login heart romance</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="image"></div>
+
+        <h1>Log in</h1>
+
+        <form id="loginForm">
+            <input type="text" name="tex" placeholder="write your name" required>
+            <input type="password" name="pass" placeholder="write your password" required>
+            <button type="submit">click here <i class="fas fa-heart"></i> to login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // يمنع إعادة تحميل الصفحة
+            // هنا ممكن تضيف تحقق من البيانات لو عايز
+
+            const username = this.tex.value.trim();
+            const password = this.pass.value;
+
+            if (username === 'maryam' && password === '28062005') {
+                window.location.href = './index2.html'; // مسار نسبي داخل المشروع
+            } else {
+                alert('اسم المستخدم أو كلمة المرور غير صحيحة!');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
